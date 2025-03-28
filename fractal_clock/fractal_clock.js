@@ -11,7 +11,7 @@ RECURSION_SCALE = 0.5
 DRAW_CLOCK = true;
 DRAW_BRANCHES = false;
 BASE_SIZE=200;
-RECURSION_LIM = 13;
+RECURSION_LIM = 12;
 
 HAND_COLOR = "white";
 
@@ -131,7 +131,12 @@ function drawRecursive(recursion_depth, center, rotation){
     }
     else if (recursion_depth == RECURSION_LIM){
         // Draw the leaves
+        if(RECURSION_LIM > 9){
         drawLine(center, draw_clock);
+        }
+        else{
+            drawClock(center, draw_clock);
+        }
     }
 
     
