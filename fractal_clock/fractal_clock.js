@@ -46,8 +46,8 @@ function hsvToRgb(h, s, v) {
 
 function set_color(){
     const h = 0.5+0.5*Math.cos(11*now / 100000); // Hue (0-1)
-    const s = 0.75+0.25*Math.cos(3*now / 100000); // Hue (0-1);   // Saturation (0-1)
-    const v = 0.75+0.25*Math.cos(7*now / 100000);;   // Value (0-1)
+    const s = 0.75 + 0.24*Math.cos(3*now / 100000); // Hue (0-1);   // Saturation (0-1)
+    const v = 0.9 + 0.09*Math.cos(7*now / 100000);;   // Value (0-1)
 
     const rgb = hsvToRgb(h, s, v);
     ctx.strokeStyle = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
