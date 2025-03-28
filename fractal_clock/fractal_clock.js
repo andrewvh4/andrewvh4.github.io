@@ -210,11 +210,11 @@ function draw(){
     }
 
     //Debug Text
-    ctx.fillStyle = "white";
-    ctx.fillText("H:" + now.getHours().toString() + " M:" + now.getMinutes().toString() + " S:" + now.getSeconds().toString() + " m:" + now.getMilliseconds().toString(), 10, 10);
-    ctx.fillText("dt: " + delta_time.toString() + "ms", 10, 20);
-    ctx.fillText("Recursion: " + RECURSION_LIM.toString(), 10, 30);
-    ctx.fillText(log_str, 10, 40);
+    // ctx.fillStyle = "white";
+    // ctx.fillText("H:" + now.getHours().toString() + " M:" + now.getMinutes().toString() + " S:" + now.getSeconds().toString() + " m:" + now.getMilliseconds().toString(), 10, 10);
+    // ctx.fillText("dt: " + delta_time.toString() + "ms", 10, 20);
+    // ctx.fillText("Recursion: " + RECURSION_LIM.toString(), 10, 30);
+    // ctx.fillText(log_str, 10, 40);
     log_str = '';
 }
 
